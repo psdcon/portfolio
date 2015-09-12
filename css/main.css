@@ -99,3 +99,14 @@
 .description {
     line-height: 26px;
 }
+
+
+.contact {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.contact a{
+    padding: 1em;
+    display:inline-block;
+    width: calc(50% - 2em);
+}
