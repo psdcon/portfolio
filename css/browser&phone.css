@@ -1,0 +1,386 @@
+/*http://www.isaacpvl.com/threadmeup/*/
+
+.browser {
+    position: relative;
+    width: 100%;
+    border-radius: 4px 4px 2px 2px;
+    border: 1px solid #999;
+    background: #999;
+    overflow: hidden;
+    transition-duration: 0.7s;
+    transition-delay: 0s;
+}
+.browser img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -1px;
+    border-radius: 0 0 1px 1px;
+}
+.browser .top {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px 3px 0 0;
+    background: #fff;
+    box-shadow: inset 0 -1px #999;
+}
+.browser .top ul {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    list-style: none;
+    padding: 0;
+}
+.browser .top ul li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    margin-right: 5px;
+    border-radius: 6px;
+    background: #999;
+}
+.browser .top span {
+    position: absolute;
+    top: 6px;
+    bottom: 8px;
+    left: 66px;
+    right: 6px;
+    padding-left: 8px;
+    box-shadow: inset 0 0 0 1px #999;
+    border-radius: 2px;
+    line-height: 27px;
+    font-size: 12px;
+    font-family: "jaf-facitweb", sans-serif;
+    text-align: left;
+    color: #666;
+}
+.browser .frame {
+    height: 780px;
+    overflow-y: scroll;
+}
+.browser .vid {
+    position: relative;
+    border-radius: 0 0 1px 1px;
+    box-shadow: inset 0 0 0 1px #999;
+    transition-duration: 0s;
+    transition-delay: 0s;
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.browser .vid video {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    background-color: #f7e7e2 !important;
+}
+
+.browser.large {
+    border-radius: 6px 6px 4px 4px;
+}
+.browser.large img {
+    border-radius: 0 0 3px 3px;
+}
+.browser.large .top {
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+}
+.browser.large .top ul {
+    top: 19px;
+    left: 16px;
+}
+.browser.large .top ul li {
+    width: 11px;
+    height: 11px;
+    margin-right: 7px;
+}
+.browser.large .top span {
+    top: 8px;
+    bottom: 10px;
+    left: 90px;
+    right: 8px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    line-height: 32px;
+}
+
+.browser.small {
+    border-radius: 3px 3px 2px 2px;
+}
+.browser.small .top {
+    height: 28px;
+    border-radius: 2px 2px 0 0;
+}
+.browser.small .top ul {
+    top: 11px;
+    left: 8px;
+}
+.browser.small .top ul li {
+    width: 6px;
+    height: 6px;
+    margin-right: 3px;
+}
+.browser.small .top span {
+    top: 5px;
+    bottom: 6px;
+    left: 42px;
+    right: 5px;
+    padding-left: 5px;
+    font-size: 9px;
+    font-weight: 500;
+    border-radius: 1px;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 640px) {
+    .browser {
+        border-radius: 3px 3px 2px 2px;
+        overflow: hidden;
+    }
+    .browser .top {
+        height: 28px;
+        border-radius: 2px 2px 0 0;
+    }
+    .browser .top ul {
+        top: 11px;
+        left: 8px;
+    }
+    .browser .top ul li {
+        width: 6px;
+        height: 6px;
+        margin-right: 3px;
+    }
+    .browser .top span {
+        top: 5px;
+        bottom: 6px;
+        left: 42px;
+        right: 5px;
+        padding-left: 5px;
+        font-size: 9px;
+        font-weight: 500;
+        border-radius: 1px;
+        line-height: 18px;
+    }
+}
+
+.phone {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    width: 30%;
+    min-width: 180px;
+    max-width: 220px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 1px solid #999;
+    background: #fff;
+    text-align: center;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+}
+.phone img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #999;
+}
+.phone div {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.phone span {
+    display: block;
+    margin: 0 auto;
+    background: #999;
+}
+.phone .top {
+    position: relative;
+    width: 100%;
+    height: 54px;
+}
+.phone .top .camera {
+    top: 15px;
+}
+.phone .top .camera span {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+}
+.phone .top .speaker {
+    top: 32px;
+}
+.phone .top .speaker span {
+    width: 34px;
+    height: 4px;
+    border-radius: 2px;
+}
+.phone .bottom {
+    position: relative;
+    width: 100%;
+    height: 54px;
+}
+.phone .bottom span {
+    border: 1px solid #999;
+    background: none;
+}
+.phone .bottom div {
+    top: 9px;
+}
+.phone .bottom div span {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+}
+.phone .frame {
+    position: relative;
+    border: 1px solid #999;
+}
+.phone .frame img, .phone .frame video {
+    width: 100%;
+    margin-bottom: -1px;
+    border: none;
+}
+.phone .frame.scroll {
+    overflow-y: scroll;
+    height: 568px;
+}
+.phone .frame.scroll.app {
+    overflow: hidden;
+}
+.phone img.header {
+    position: absolute;
+    top: 79px;
+    left: 17px;
+    right: 17px;
+    z-index: 9;
+    width: 320px;
+    height: auto;
+    border: none;
+}
+
+.phone.small {
+    width: 30%;
+    min-width: 0;
+    padding: 0 1%;
+    border-radius: 12px;
+}
+.phone.small .top {
+    height: 36px;
+}
+.phone.small .top .camera {
+    top: 11px;
+}
+.phone.small .top .camera span {
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+}
+.phone.small .top .speaker {
+    top: 22px;
+}
+.phone.small .top .speaker span {
+    width: 24px;
+    height: 3px;
+}
+.phone.small .bottom {
+    height: 36px;
+}
+.phone.small .bottom div {
+    top: 4px;
+}
+.phone.small .bottom div span {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+@media screen and (max-width: 960px) {
+    .phone {
+        top: 16%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .phone {
+        top: 14%;
+        width: 30%;
+        min-width: 0;
+        padding: 0 1%;
+        border-radius: 12px;
+    }
+    .phone .top {
+        height: 36px;
+    }
+    .phone .top .camera {
+        top: 11px;
+    }
+    .phone .top .camera span {
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+    }
+    .phone .top .speaker {
+        top: 22px;
+    }
+    .phone .top .speaker span {
+        width: 24px;
+        height: 3px;
+    }
+    .phone .bottom {
+        height: 36px;
+    }
+    .phone .bottom div {
+        top: 4px;
+    }
+    .phone .bottom div span {
+        width: 26px;
+        height: 26px;
+        border-radius: 13px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .phone {
+        top: 22%;
+        width: 30%;
+        min-width: 0;
+        padding: 0 1.5%;
+        border-radius: 9px;
+    }
+    .phone .top {
+        height: 26px;
+    }
+    .phone .top .camera {
+        top: 8px;
+    }
+    .phone .top .camera span {
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+    }
+    .phone .top .speaker {
+        top: 16px;
+    }
+    .phone .top .speaker span {
+        width: 18px;
+        height: 2px;
+    }
+    .phone .bottom {
+        height: 26px;
+    }
+    .phone .bottom div {
+        top: 4px;
+    }
+    .phone .bottom div span {
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+    }
+}
