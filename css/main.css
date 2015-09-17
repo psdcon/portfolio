@@ -110,3 +110,19 @@
     display:inline-block;
     width: calc(50% - 2em);
 }
+
+
+
+
+/*Nexus5*/
+.marvel-device.nexus5 {
+    padding: 50px 15px;
+    width: 320px;
+    max-width: 90%;
+    height: auto; 
+    margin: 0 auto;
+}
+
+.marvel-device.nexus5:before{
+    /*height: 102%;*/
+}
