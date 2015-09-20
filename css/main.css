@@ -96,8 +96,6 @@
 }
 
 /*Site info stuff*/
-.title {
-}
 .description {
     line-height: 26px;
     color: #868686;
@@ -109,6 +107,7 @@
     color: green;
 }
 .skills {
+    text-align: center;
     list-style: none;
     padding: 0;
 }
@@ -154,4 +153,8 @@
 }
 .marvel-device.nexus5 .screen img {
     width: 100%;
+}
+
+.bbrow {
+    margin-top: 2em
 }
