@@ -17,7 +17,22 @@
 .preview--right .browser {
     margin-left: 7.5%;
 }
-
 .info {
     text-align: center;
+}
+
+
+/*Nexus5*/
+.marvel-device.nexus5:before {
+    height: 103%;
+}
+.marvel-device.nexus5 {
+    max-width: 90%;
+}
+.marvel-device.nexus5 .camera:before {
+    left: -100px;
+}
+
+.bbrow {
+    margin-top:5em
 }

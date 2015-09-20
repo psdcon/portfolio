@@ -96,33 +96,62 @@
 }
 
 /*Site info stuff*/
+.title {
+}
 .description {
     line-height: 26px;
+    color: #868686;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.check {
+    color: green;
+}
+.skills {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    /*background-color: #F04;;*/
+    display: inline;
+    padding: .2em .6em .3em;
+    line-height: 32px;
+    font-size: 1em;
+    white-space: nowrap;
+    border-radius: .25em;
+    /*color: #fff;*/
+    border: 1px solid #868686;
 }
 
 
 .contact {
     text-align: center;
-    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 6em;
 }
-.contact a{
+.contact div{
     padding: 1em;
-    display:inline-block;
-    width: calc(50% - 2em);
+    font-size: 1.3em;
 }
-
-
 
 
 /*Nexus5*/
+.center {
+    text-align: center;
+}
+.marvel-device.nexus5:before {
+    height: 102.5%;
+}
 .marvel-device.nexus5 {
     padding: 50px 15px;
     width: 320px;
-    max-width: 90%;
+    max-width: 60%;
     height: auto; 
-    margin: 0 auto;
 }
-
-.marvel-device.nexus5:before{
-    /*height: 102%;*/
+.marvel-device.nexus5 .camera:before {
+    left: -50px;
+}
+.marvel-device.nexus5 .screen img {
+    width: 100%;
 }
