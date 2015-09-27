@@ -1,1 +1,1 @@
-$(".airport").airport(["cool","performant","awesome","responsive"]);
+$(".airport").airport(["cool","fast","stylish","animated","performant","responsive"]);
