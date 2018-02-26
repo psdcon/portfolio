@@ -1,0 +1,67 @@
+.container-fluid {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+/*Header stuff*/
+.nav {
+    justify-content: space-between;
+}
+.project {
+    margin-bottom: 150px;
+}
+
+.preview {
+    display: block;
+    position: relative;
+}
+
+/*Each project stuff*/
+.masters {
+    max-width: 1000px;
+    margin: 0 auto 6em;
+}
+
+.masters-paper {
+    margin: 0 -4em;
+    flex-wrap: nowrap;
+}
+
+.masters-paper-page:hover {
+    box-shadow: 1px 1px 5px #999;
+    transform: scale(1.05, 1.05);
+}
+
+.masters-paper-page {
+    flex-grow: 1;
+    flex-basis: auto;
+    transition: transform 0.1s;
+}
+
+.preview--left .browser {
+    margin-right: 7.5%;
+}
+
+.preview--right .browser {
+    margin-left: 7.5%;
+}
+
+.info {
+    text-align: center;
+}
+
+/*Nexus5*/
+.marvel-device.nexus5:before {
+    height: 103%;
+}
+
+.marvel-device.nexus5 {
+    max-width: 90%;
+}
+
+.marvel-device.nexus5 .camera:before {
+    left: -100px;
+}
+
+.android-row {
+    margin-bottom: 10em;
+}

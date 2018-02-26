@@ -1,0 +1,219 @@
+/*******************************
+        Animation stuff
+********************************/
+.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+/*Navbar*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOutUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+}
+
+.fadeOutUp {
+    animation-name: fadeOutUp;
+}
+
+@Keyframes FadeInDownSmall {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fadeInDownSmall {
+    animation-name: FadeInDownSmall;
+}
+
+/*</animation stuff>*/
+
+/*Header stuff*/
+.nav {
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav a{
+    padding: 0 1em;
+}
+
+.section-title {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.header {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.header .airport {
+    font-size: 24px;
+}
+
+/*Each project stuff*/
+.masters {
+    margin-bottom: 2em;
+}
+
+.masters-paper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.masters-paper-page {
+    flex-basis: calc(25% - 4px);
+    border: solid 1px #CCC;
+    margin: 2px;
+}
+
+.masters-paper img {
+    width: 100%;
+}
+
+.masters-action {
+    font-size: 1.5em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
+.preview {
+    display: block;
+    position: relative;
+}
+
+.android-row {
+    margin-bottom: 5em;
+}
+
+/*Devices stuff*/
+.preview .browser {
+    width: 92.5%;
+}
+
+.preview--left .phone {
+    right: 0;
+}
+
+.preview--left .browser {
+    margin-right: 0;
+}
+
+.preview--right .browser {
+    margin-left: 0;
+}
+
+/*Site info stuff*/
+.description {
+    line-height: 26px;
+    color: #868686;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.check {
+    color: green;
+}
+
+.skills {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    /*background-color: #F04;;*/
+    display: inline;
+    padding: .2em .6em .3em;
+    line-height: 32px;
+    font-size: 1em;
+    white-space: nowrap;
+    border-radius: .25em;
+    /*color: #fff;*/
+    border: 1px solid #868686;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 6em;
+}
+
+.contact div {
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+/*Nexus5*/
+
+.center {
+    text-align: center;
+}
+
+.marvel-device.nexus5:before {
+    height: 102.5%;
+}
+
+.marvel-device.nexus5 {
+    padding: 50px 15px;
+    width: 320px;
+    max-width: 60%;
+    height: auto;
+}
+
+.marvel-device.nexus5 .camera:before {
+    left: -50px;
+}
+
+.marvel-device.nexus5 .screen img {
+    width: 100%;
+    min-height: 200px;
+}
+
+.bbrow {
+    margin-top: 2em
+}

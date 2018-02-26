@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trampoline Shapes and Poses</title>
+</head>
+<body>
+<style>
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .pose-name {
+            text-align: center;
+            color: #e26c7d;
+            font-size: 3em;
+            position: absolute;
+            z-index: 2;
+            padding: 8px 24px;
+            font-family: sans-serif;
+
+            /*transform: translateY(1em);*/
+            /*opacity: 0;*/
+
+            /*transition: opacity 0.2s, transform 0.2s;*/
+        }
+
+        /* change the width of the controls so they're not offensively big*/
+        /*.dg {*/
+            /*width: 100px;*/
+        /*}*/
+
+        .dg .property-name{
+            width: auto;
+            clear: none;
+            float: none;
+            overflow: auto;
+        }
+
+        .dg .c {
+            display: inline-block;
+            float: right;
+            width: auto;
+        }
+
+        /* Change controls highlight to match the pink*/
+        .dg .cr.function {
+            /*border-color: #e26c7d;*/
+            border-left: 3px solid #e26c7d;
+        }
+
+        .fadeUp {
+            animation-name: fadeUp;
+            animation-duration: 0.3s;
+        }
+
+        @keyframes fadeUp {
+            from {
+                /*transform: translateY(8px);*/
+                /*transform: scale(0.9);*/
+                opacity: 0.5;
+            }
+            to {
+                /*transform: translateY(0);*/
+                /*transform: scale(1);*/
+                opacity: 1;
+            }
+        }
+    </style>
+<div class="pose-name fadeUp">Pike</div>
+
+<script src="js/three.js"></script>
+<script src="js/OrbitControls.js"></script>
+<!--<script src="js/stats.min.js"></script>-->
+<script src="js/dat.gui.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
